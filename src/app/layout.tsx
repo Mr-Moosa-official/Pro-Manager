@@ -3,8 +3,8 @@ import './globals.css';
 import { Toaster } from "@/components/ui/toaster";
 
 export const metadata: Metadata = {
-  title: 'ProManager',
-  description: 'A collaborative multi-tenant SaaS platform for project and task management.',
+  title: 'TaskMaster',
+  description: 'Your ultimate project and task management solution.',
 };
 
 export default function RootLayout({

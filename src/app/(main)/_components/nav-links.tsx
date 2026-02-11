@@ -5,13 +5,13 @@ import { usePathname } from 'next/navigation';
 import { Home, Briefcase, BookOpen, Star } from 'lucide-react';
 import { Badge } from '@/components/ui/badge';
 import { cn } from '@/lib/utils';
-import { projects } from '@/lib/data';
+import { projects, reviews } from '@/lib/data';
 
 const navLinks = [
     { href: '/dashboard', label: 'Dashboard', icon: Home },
     { href: '/projects', label: 'Projects', icon: Briefcase, badge: projects.length },
     { href: '/courses', label: 'Courses', icon: BookOpen },
-    { href: '/reviews', label: 'Reviews', icon: Star },
+    { href: '/reviews', label: 'Reviews', icon: Star, badge: reviews.length },
 ];
 
 export function NavLinks() {

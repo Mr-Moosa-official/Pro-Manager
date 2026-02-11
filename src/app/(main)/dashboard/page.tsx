@@ -31,6 +31,7 @@ import {
   ChartContainer,
   ChartTooltip,
   ChartTooltipContent,
+  ChartConfig,
 } from "@/components/ui/chart";
 import { Bar, BarChart, CartesianGrid, XAxis } from "recharts";
 import { projects, users } from "@/lib/data";
@@ -47,9 +48,9 @@ const chartData = [
 const chartConfig = {
   tasks: {
     label: "Tasks",
-    color: "hsl(var(--accent))",
+    color: "hsl(var(--primary))",
   },
-};
+} satisfies ChartConfig;
 
 export default function Dashboard() {
   const totalTasks = projects.reduce((acc, p) => acc + p.tasks.length, 0);

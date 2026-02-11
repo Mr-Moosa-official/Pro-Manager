@@ -18,7 +18,7 @@ function StarRating({ rating }: { rating: number }) {
           key={i}
           className={cn(
             "h-5 w-5",
-            rating > i ? "text-amber-400 fill-amber-400" : "text-muted-foreground"
+            rating > i ? "text-amber-400 fill-amber-400" : "text-muted-foreground/50"
           )}
         />
       ))}
@@ -45,7 +45,7 @@ export default function ReviewsPage() {
                 <StarRating rating={review.rating} />
             </CardHeader>
             <CardContent>
-              <p className="text-muted-foreground">"{review.text}"</p>
+              <p className="text-muted-foreground italic">"{review.text}"</p>
             </CardContent>
           </Card>
         ))}

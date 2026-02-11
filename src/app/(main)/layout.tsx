@@ -35,7 +35,7 @@ function ProManagerLogo() {
     return (
         <Link href="/dashboard" className="flex items-center gap-2 font-semibold">
             <Briefcase className="h-6 w-6 text-primary" />
-            <span className="">ProManager</span>
+            <span className="">TaskMaster</span>
         </Link>
     );
 }
@@ -67,7 +67,7 @@ export default function MainLayout({
                 </CardDescription>
               </CardHeader>
               <CardContent className="p-2 pt-0 md:p-4 md:pt-0">
-                <Button size="sm" className="w-full bg-accent text-accent-foreground hover:bg-accent/90">
+                <Button size="sm" className="w-full">
                   Upgrade
                 </Button>
               </CardContent>
@@ -107,7 +107,7 @@ export default function MainLayout({
                     </CardDescription>
                   </CardHeader>
                   <CardContent>
-                    <Button size="sm" className="w-full bg-accent text-accent-foreground hover:bg-accent/90">
+                    <Button size="sm" className="w-full">
                       Upgrade
                     </Button>
                   </CardContent>
@@ -136,7 +136,7 @@ export default function MainLayout({
             <DropdownMenuTrigger asChild>
               <Button variant="secondary" size="icon" className="rounded-full">
                 <Avatar className="h-8 w-8">
-                    <AvatarImage src="https://picsum.photos/seed/avatar1/32/32" data-ai-hint="person face" />
+                    <AvatarImage src="https://images.unsplash.com/photo-1530268729831-4b0b9e170218" data-ai-hint="person face" />
                     <AvatarFallback>JD</AvatarFallback>
                 </Avatar>
                 <span className="sr-only">Toggle user menu</span>

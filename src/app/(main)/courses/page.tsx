@@ -14,7 +14,7 @@ export default function CoursesPage() {
   return (
     <div>
       <h1 className="text-3xl font-bold tracking-tight mb-6">Project Management Courses</h1>
-      <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+      <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
         {courses.map((course) => (
           <Card key={course.id} className="flex flex-col overflow-hidden">
             <div className="relative w-full aspect-video">
