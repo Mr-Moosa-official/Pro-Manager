@@ -1,3 +1,58 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "avatar1",
+      "description": "User avatar for John Doe",
+      "imageUrl": "https://images.unsplash.com/photo-1530268729831-4b0b9e170218?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxwZXJzb24lMjBmYWNlfGVufDB8fHx8MTc3MDc3MDIyMXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "person face"
+    },
+    {
+      "id": "course1",
+      "description": "Team collaborating on a project",
+      "imageUrl": "https://images.unsplash.com/photo-1517048676732-d65bc937f952?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHx0ZWFtJTIwbWVldGluZ3xlbnwwfHx8fDE3NzA3NDMzNTV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "team meeting"
+    },
+    {
+      "id": "course2",
+      "description": "Planning session with a whiteboard",
+      "imageUrl": "https://images.unsplash.com/photo-1762784575331-66618cc4884a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHx3aGl0ZWJvYXJkJTIwcGxhbm5pbmd8ZW58MHx8fHwxNzcwODM4NDEyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "whiteboard planning"
+    },
+    {
+      "id": "course3",
+      "description": "A wall with colorful sticky notes",
+      "imageUrl": "https://images.unsplash.com/photo-1580934174026-8142803ebb5b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxzdGlja3klMjBub3Rlc3xlbnwwfHx8fDE3NzA3ODgwMjF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "sticky notes"
+    },
+    {
+      "id": "course4",
+      "description": "A person presenting to a group",
+      "imageUrl": "https://images.unsplash.com/photo-1633260677728-e3a29e63fcab?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxwZXJzb24lMjBwcmVzZW50aW5nfGVufDB8fHx8MTc3MDgzODQxMnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "person presenting"
+    },
+    {
+      "id": "review1",
+      "description": "Avatar of a smiling woman",
+      "imageUrl": "https://images.unsplash.com/photo-1525134479668-1bee5c7c6845?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHx3b21hbiUyMHNtaWxpbmd8ZW58MHx8fHwxNzcwNzQyNjA2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "woman smiling"
+    },
+    {
+      "id": "review2",
+      "description": "Portrait of a man",
+      "imageUrl": "https://images.unsplash.com/photo-1636377985931-898218afd306?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxtYW4lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NzA3MzYzMTV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "man portrait"
+    },
+    {
+      "id": "review3",
+      "description": "Person wearing glasses",
+      "imageUrl": "https://images.unsplash.com/photo-1590305173565-f789a8dd6be7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwZXJzb24lMjBnbGFzc2VzfGVufDB8fHx8MTc3MDgzNzg4M3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "person glasses"
+    },
+    {
+      "id": "review4",
+      "description": "Man in a thoughtful pose",
+      "imageUrl": "https://images.unsplash.com/photo-1623185131451-ea1c7552afc3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxtYW4lMjB0aGlua2luZ3xlbnwwfHx8fDE3NzA3NjA3OTd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "man thinking"
+    }
+  ]
 }
