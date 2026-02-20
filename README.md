@@ -7,7 +7,7 @@ Built with modern architecture and clean UI principles, Pro Manager ensures data
 🚀 Core Features
 🏢 Tenant-Specific Workspaces
 
-Create isolated workspaces for different organizations or teams
+Create isolated  workspaces for different organizations or teams
 
 Ensures data privacy and secure separation between tenants
 
