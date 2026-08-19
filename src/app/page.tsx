@@ -8,6 +8,7 @@ export default function Home() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
+  const [isRegister, setIsRegister] = useState(false);
 
   useEffect(() => {
     if (typeof window !== 'undefined' && localStorage.getItem('pm_auth') === 'true') {
@@ -24,7 +25,7 @@ export default function Home() {
     }
 
     try {
-      const res = await fetch('/api/login', {
+      const res = await fetch(isRegister ? '/api/register' : '/api/login', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email, password }),
@@ -34,7 +35,7 @@ export default function Home() {
         router.push('/dashboard');
       } else {
         const data = await res.json();
-        setError(data?.message || 'Login failed');
+        setError(data?.message || (isRegister ? 'Registration failed' : 'Login failed'));
       }
     } catch (err) {
       setError('Network error');
@@ -59,9 +60,13 @@ export default function Home() {
           </label>
 
           {error && <div style={{ color: '#b91c1c', marginTop: 8 }}>{error}</div>}
-
-          <button type="submit" style={{ marginTop: 16, width: '100%', padding: '10px 12px', borderRadius: 6, background: '#111827', color: '#fff', border: 'none' }}>Sign in</button>
+          <button type="submit" style={{ marginTop: 16, width: '100%', padding: '10px 12px', borderRadius: 6, background: '#111827', color: '#fff', border: 'none' }}>{isRegister ? 'Create account' : 'Sign in'}</button>
         </form>
+
+        <div style={{ marginTop: 12, textAlign: 'center' }}>
+          <button onClick={() => { setIsRegister(!isRegister); setError(''); }} style={{ background: 'transparent', border: 'none', color: '#2563eb', cursor: 'pointer' }}>{isRegister ? 'Have an account? Sign in' : "Don't have an account? Create one"}</button>
+        </div>
+        
       </div>
 
       <a
