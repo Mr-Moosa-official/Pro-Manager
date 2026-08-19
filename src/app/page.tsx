@@ -15,7 +15,7 @@ export default function Home() {
     }
   }, [router]);
 
-  function handleSubmit(e: React.FormEvent) {
+  async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
     setError('');
     if (!email || !password) {
@@ -23,12 +23,21 @@ export default function Home() {
       return;
     }
 
-    // Demo authentication: accept admin@example.com / admin
-    if (email === 'admin@example.com' && password === 'admin') {
-      localStorage.setItem('pm_auth', 'true');
-      router.push('/dashboard');
-    } else {
-      setError('Invalid credentials. Use admin@example.com / admin');
+    try {
+      const res = await fetch('/api/login', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email, password }),
+      });
+
+      if (res.ok) {
+        router.push('/dashboard');
+      } else {
+        const data = await res.json();
+        setError(data?.message || 'Login failed');
+      }
+    } catch (err) {
+      setError('Network error');
     }
   }
 
